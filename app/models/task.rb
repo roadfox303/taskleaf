@@ -6,6 +6,8 @@ class Task < ApplicationRecord
   # 自作のバリデートメソッドを追加
   validate :validate_name_not_including_comma
 
+  belongs_to :user
+
   private
   # コールバックメソッド
   def set_nameless_name
