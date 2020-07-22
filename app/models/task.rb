@@ -8,10 +8,12 @@ class Task < ApplicationRecord
 
   belongs_to :user
 
+  scope :recent, -> { order(created_at: :desc) }
+
   private
   # コールバックメソッド
   def set_nameless_name
-    self.name = '名前なし' if name.blank?
+    #self.name = '名前なし' if name.blank?
   end
   # 自作のバリデート用メソッド
   def validate_name_not_including_comma
