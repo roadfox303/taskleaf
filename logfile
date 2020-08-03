@@ -1,0 +1,6 @@
+2020-07-31 10:05:37.739 JST [6313] LOG:  starting PostgreSQL 12.3 on x86_64-apple-darwin19.4.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.59), 64-bit
+2020-07-31 10:05:37.740 JST [6313] LOG:  listening on IPv6 address "::1", port 5432
+2020-07-31 10:05:37.740 JST [6313] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-07-31 10:05:37.742 JST [6313] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-07-31 10:05:37.764 JST [6314] LOG:  database system was shut down at 2020-07-31 10:03:04 JST
+2020-07-31 10:05:37.769 JST [6313] LOG:  database system is ready to accept connections
