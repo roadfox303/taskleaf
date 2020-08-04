@@ -51,7 +51,11 @@ class TasksController < ApplicationController
 
   def destroy
     @task.destroy
-    redirect_to tasks_url, notice: "タスク「#{@task.name}」を削除しました。"
+    # redirect_to tasks_url, notice: "タスク「#{@task.name}」を削除しました。"
+    # Ajax でのページ書き換えなので redirect_to ではなく、下記の head メソッドを用いて、レスポンスボディなしで HTTPステータス 204（成功と判定） が返るようにする。
+
+    #head :no_content
+    # Javascript レスポンスを受けてそれを出力するので :no_content ではない。
   end
 
   def import
